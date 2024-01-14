@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       id: 111,
       name: "Adam",
-      photo: "images/pexels-ali-pazani-2787341.jpg",
+      photo: "./images/pexels-ali-pazani-2787341.jpg",
       des: "high rated for that high quality products and speed delvery",
     },
     {
