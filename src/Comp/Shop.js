@@ -86,7 +86,7 @@ const Shop = () => {
       <div className="container">
         <div className="shop-head">
           <div className="shop-head-box">
-            <img src="./images/pexels-chevon-rossouw-2558605.jpg" alt="" />
+            <img src="images/pexels-chevon-rossouw-2558605.jpg" alt="" />
           </div>
         </div>
         <div className="search-bar">
