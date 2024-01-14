@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/E-commerce-Cat/static/css/main.6ad077d5.css",
+    "main.js": "/E-commerce-Cat/static/js/main.2f52959f.js",
+    "static/media/pexels-kirsten-bühne-1521305.jpg": "/E-commerce-Cat/static/media/pexels-kirsten-bühne-1521305.de7f07d91c2f2d583877.jpg",
+    "index.html": "/E-commerce-Cat/index.html",
+    "main.6ad077d5.css.map": "/E-commerce-Cat/static/css/main.6ad077d5.css.map",
+    "main.2f52959f.js.map": "/E-commerce-Cat/static/js/main.2f52959f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ad077d5.css",
+    "static/js/main.2f52959f.js"
+  ]
+}
