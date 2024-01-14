@@ -1,0 +1,42 @@
+.slide {
+  padding: 50px 0 80px 0;
+  background-color: #d9a0d3;
+  h1 {
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ddd;
+    width: fit-content;
+    margin: 0px auto 40px auto;
+    transition: 0.5s;
+  }
+  h1:hover {
+    color: #ddd;
+    background-color: rgba(43, 108, 86, 0.8);
+  }
+  .carousel {
+    cursor: grab;
+    overflow: hidden;
+    border-radius: 15px;
+    .inner-carousel {
+      display: flex;
+      .test-card {
+        padding: 20px;
+        margin: auto 15px;
+        border-radius: 15px;
+        border: 10px solid #eee;
+        background-color: white;
+        img {
+          width: 270px;
+          height: 270px;
+          border-radius: 15px;
+          pointer-events: none;
+          margin: 10px 0;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}

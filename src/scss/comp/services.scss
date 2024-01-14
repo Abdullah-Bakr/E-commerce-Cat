@@ -1,0 +1,57 @@
+.services {
+  background-color: bisque;
+  padding: 50px 0;
+  .container {
+    .my-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        text-transform: uppercase;
+        color: rgb(45, 98, 84);
+        background-color: rgb(163, 164, 46);
+        width: fit-content;
+        margin: 10px auto 40px auto;
+        padding: 5px 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      h1:hover {
+        background-color: whitesmoke;
+        color: rgb(45, 28, 28);
+      }
+      .lor {
+        max-width: 500px;
+        text-align: center;
+      }
+    }
+    .cardy {
+      position: relative;
+      margin: 2.1rem !important;
+      .my-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -30px;
+        font-size: 40px;
+        background-color: rgb(243, 113, 33);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+      }
+    }
+  }
+}
+@media (max-width: "450px") {
+  .services {
+    padding-bottom: 80px;
+  }
+}

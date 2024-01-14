@@ -1,0 +1,45 @@
+.home {
+  .home-top {
+    background-image: url("../../../public/images/pexels-kirsten-bühne-1521305.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 58px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .home-info {
+      color: rgb(250, 213, 158);
+      max-width: 50%;
+      background-color: rgba(43, 108, 86, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  }
+  .testmonials {
+    background-color: blanchedalmond;
+    .card-info {
+      padding: 50px 0;
+      img {
+        height: 200px;
+        width: 200px;
+      }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 50px 0;
+      }
+    }
+  }
+}
+@media (max-width: "450px") {
+  .home {
+    .home-info {
+      max-width: 80% !important;
+    }
+    .products {
+      padding-bottom: 40px;
+    }
+  }
+}

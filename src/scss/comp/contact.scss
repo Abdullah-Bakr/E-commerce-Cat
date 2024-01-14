@@ -1,0 +1,101 @@
+.contact {
+  padding: 40px 0 60px 0;
+  background-color: rgb(239, 241, 146);
+  h1 {
+    text-transform: uppercase;
+    color: rgb(45, 98, 84);
+    background-color: rgb(163, 164, 46);
+    width: fit-content;
+    margin: 10px auto 40px auto;
+    padding: 5px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  h1:hover {
+    background-color: whitesmoke;
+    color: rgb(45, 28, 28);
+  }
+  .full-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .left-info {
+      min-width: 40%;
+      text-align: center;
+      .social {
+        h4 {
+          margin: 15px 0;
+        }
+
+        color: rgb(45, 98, 84);
+        .communication {
+          color: rgb(45, 98, 84);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          margin: 15px 0;
+          font-size: 40px;
+          cursor: pointer;
+          transition: 0.5s;
+          .icon {
+            transition: 0.5s;
+          }
+        }
+        .icon:hover {
+          color: #1bdca9;
+        }
+      }
+      .address {
+        margin-top: 25px;
+        color: rgb(45, 98, 84);
+        h2 {
+          text-transform: capitalize;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 18px;
+          span {
+            display: block;
+          }
+        }
+      }
+      .contacts {
+        color: rgb(45, 98, 84);
+        margin-top: 25px;
+        font-weight: 400;
+        p {
+          margin-top: 15px;
+        }
+      }
+    }
+    .right-info {
+      min-width: 60%;
+      button {
+        padding: 5px 20px;
+        background-color: orange;
+        border: none;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px 0px rgb(118, 111, 111);
+        transition: 0.5s;
+      }
+      button:hover {
+        color: black;
+        background-color: aquamarine;
+      }
+    }
+  }
+}
+@media (max-width: "512px") {
+  .contact {
+    padding: 30px 0 120px 0;
+
+    .full-info {
+      display: block;
+    }
+  }
+}
