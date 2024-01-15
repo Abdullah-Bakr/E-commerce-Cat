@@ -14,6 +14,12 @@ const CartProvider = ({ children }) => {
       : 0
   );
 
+  // Toast
+
+  const [showToast, setShowToast] = useState(false);
+  const [messege, setmessege] = useState("");
+
+  // cart count
   const addToCart = (product) => {
     const { id, title, image, price } = product;
 
@@ -25,8 +31,17 @@ const CartProvider = ({ children }) => {
         { id, title, image, price, quantity: 1 },
       ]);
       setTotalQuantity((prevQuantity) => prevQuantity + 1);
+      setShowToast(true);
+      setmessege("Congratulations, You Have Added A New Item");
+      setTimeout(() => {
+        setShowToast(false);
+      }, 2000);
     } else {
-      alert("This item is already in your cart!");
+      setShowToast(true);
+      setmessege("Sorry, You Have Already Added This Item");
+      setTimeout(() => {
+        setShowToast(false);
+      }, 2000);
     }
   };
 
@@ -84,6 +99,8 @@ const CartProvider = ({ children }) => {
         increaseCartQuantity,
         decreaseCartQuantity,
         removeItem,
+        showToast,
+        messege,
       }}
     >
       {children}

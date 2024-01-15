@@ -50,7 +50,9 @@ const Cart = () => {
                     </button>
                   </div>
                   <div className="action">
-                    <span>${item.price * item.quantity}</span>
+                    <span>
+                      {item.quantity} * {item.price}
+                    </span>
                     <button onClick={() => removeItem(item.id)}>Remove</button>
                   </div>
                 </div>

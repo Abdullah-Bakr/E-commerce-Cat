@@ -6,6 +6,7 @@ import { useCart } from "../Context/CartContext";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
+import AddToast from "./AddToast";
 
 const Shop = () => {
   // show details
@@ -137,9 +138,15 @@ const Shop = () => {
                 />
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
-                    <span onClick={() => filtercat("dry")}>dry food</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("dry");
+                    }}
+                  >
+                    <span>dry food</span>
                   </Dropdown.Item>
+
                   <Dropdown.Item href="#/action-2">
                     <span onClick={() => filtercat("wet")}>wet food</span>
                   </Dropdown.Item>
@@ -249,6 +256,7 @@ const Shop = () => {
               );
             })}
           </div>
+          <AddToast />
         </div>
       </div>
     </div>
