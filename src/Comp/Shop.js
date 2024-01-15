@@ -34,7 +34,7 @@ const Shop = () => {
     setShowDetails(true);
   };
 
-  const { addToCart } = useCart();
+  const { addToCart, setShowToast, setmessege } = useCart();
 
   const [items, setItems] = useState(allInfo);
   const [originalItems, setOriginalItems] = useState([]);
@@ -106,7 +106,11 @@ const Shop = () => {
           <button
             onClick={() => {
               if (searchTerm.trim() === "") {
-                alert("Please Search For Somthing");
+                setShowToast(true);
+                setmessege("Please write something to search for");
+                setTimeout(() => {
+                  setShowToast(false);
+                }, 2000);
                 setItems(originalItems);
               } else {
                 const filteredItems = filterItemsBySearchTerm(
@@ -146,12 +150,21 @@ const Shop = () => {
                   >
                     <span>dry food</span>
                   </Dropdown.Item>
-
-                  <Dropdown.Item href="#/action-2">
-                    <span onClick={() => filtercat("wet")}>wet food</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("wet");
+                    }}
+                  >
+                    <span>wet food</span>
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    <span onClick={() => filtercat("raw")}>raw food</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("raw");
+                    }}
+                  >
+                    <span>raw food</span>
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -167,14 +180,29 @@ const Shop = () => {
                 />
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
-                    <span onClick={() => filtercat("toys")}>toys</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("toys");
+                    }}
+                  >
+                    <span>toys</span>
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    <span onClick={() => filtercat("beds")}>beds</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("beds");
+                    }}
+                  >
+                    <span>beds</span>
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    <span onClick={() => filtercat("litter")}>litter</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("litter");
+                    }}
+                  >
+                    <span>litter</span>
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -190,11 +218,21 @@ const Shop = () => {
                 />
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
-                    <span onClick={() => filtercat("dental")}>dental</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("dental");
+                    }}
+                  >
+                    <span>dental</span>
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    <span onClick={() => filtercat("vitamins")}>vitamins</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("vitamins");
+                    }}
+                  >
+                    <span>vitamins</span>
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -210,16 +248,29 @@ const Shop = () => {
                 />
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
-                    <span onClick={() => filtercat("bowls")}>bowls</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("bowls");
+                    }}
+                  >
+                    <span>bowls</span>
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    <span onClick={() => filtercat("crates")}>crates</span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("crates");
+                    }}
+                  >
+                    <span>crates</span>
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    <span onClick={() => filtercat("scratching")}>
-                      scratching
-                    </span>
+                  <Dropdown.Item
+                    onClick={(e) => {
+                      e.preventDefault();
+                      filtercat("scratching");
+                    }}
+                  >
+                    <span>scratching</span>
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

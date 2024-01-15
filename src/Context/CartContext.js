@@ -101,6 +101,8 @@ const CartProvider = ({ children }) => {
         removeItem,
         showToast,
         messege,
+        setShowToast,
+        setmessege,
       }}
     >
       {children}
