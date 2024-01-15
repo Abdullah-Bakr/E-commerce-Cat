@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/E-commerce-Cat/static/css/main.cc9d0a7b.css",
-    "main.js": "/E-commerce-Cat/static/js/main.efdb8601.js",
+    "main.js": "/E-commerce-Cat/static/js/main.aac9266f.js",
     "static/media/pexels-kirsten-bühne-1521305.jpg": "/E-commerce-Cat/static/media/pexels-kirsten-bühne-1521305.de7f07d91c2f2d583877.jpg",
     "index.html": "/E-commerce-Cat/index.html",
     "main.cc9d0a7b.css.map": "/E-commerce-Cat/static/css/main.cc9d0a7b.css.map",
-    "main.efdb8601.js.map": "/E-commerce-Cat/static/js/main.efdb8601.js.map"
+    "main.aac9266f.js.map": "/E-commerce-Cat/static/js/main.aac9266f.js.map"
   },
   "entrypoints": [
     "static/css/main.cc9d0a7b.css",
-    "static/js/main.efdb8601.js"
+    "static/js/main.aac9266f.js"
   ]
 }
