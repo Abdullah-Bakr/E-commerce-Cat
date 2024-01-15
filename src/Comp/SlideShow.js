@@ -24,7 +24,7 @@ const Slideshow = () => {
             {allInfo.map((test) => {
               return (
                 <div key={test.id} className="test-card">
-                  <img src={test.image} alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/${test.image}`} alt="" />
                 </div>
               );
             })}

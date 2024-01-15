@@ -33,10 +33,11 @@ const Cart = () => {
                 <div className="cart-product">
                   <div className="img-box">
                     <img
-                      src={item.image}
+                      src={`${process.env.PUBLIC_URL}/${item.image}`}
                       alt={item.title}
                       style={{ width: "80px", height: "80px" }}
                     />
+
                     <p>{item.title}</p>
                   </div>
                   <div className="amount">

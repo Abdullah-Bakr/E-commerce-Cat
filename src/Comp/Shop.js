@@ -64,7 +64,10 @@ const Shop = () => {
             </button>
             <div className="detail-container">
               <div className="img-box">
-                <img src={detail.image} alt={detail.title} />
+                <img
+                  src={`${process.env.PUBLIC_URL}/${detail.image}`}
+                  alt={detail.title}
+                />
               </div>
               <div className="product-info">
                 <h4>#{detail.type}</h4>
@@ -86,7 +89,10 @@ const Shop = () => {
       <div className="container">
         <div className="shop-head">
           <div className="shop-head-box">
-            <img src="images/pexels-chevon-rossouw-2558605.jpg" alt="" />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/pexels-chevon-rossouw-2558605.jpg`}
+              alt=""
+            />
           </div>
         </div>
         <div className="search-bar">
@@ -217,7 +223,11 @@ const Shop = () => {
               return (
                 <div className="box" key={item.id}>
                   <div className="img-box">
-                    <img src={item.image} alt="" />
+                    <img
+                      src={`${process.env.PUBLIC_URL}/${item.image}`}
+                      alt=""
+                    />
+
                     <div className="icons">
                       <div
                         onClick={() => openDetails(item)}

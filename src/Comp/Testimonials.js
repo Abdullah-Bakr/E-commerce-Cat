@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       id: 111,
       name: "Adam",
-      photo: "./images/pexels-ali-pazani-2787341.jpg",
+      photo: "images/pexels-ali-pazani-2787341.jpg",
       des: "high rated for that high quality products and speed delvery",
     },
     {
@@ -74,7 +74,7 @@ const Testimonials = () => {
             {data.map((test) => {
               return (
                 <div key={test.id} className="test-card">
-                  <img src={test.photo} alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/${test.photo}`} alt="" />
                   <h3>{test.name}</h3>
                   <p>{test.des}</p>
                 </div>

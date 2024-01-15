@@ -3,7 +3,7 @@ const allInfo = [
   {
     id: 1,
     title: "Nutritious Dry Cat Food",
-    image: "/images/dry_food_image.jpg",
+    image: "images/dry_food_image.jpg",
     type: "food",
     typeSpecial: "dry",
     price: 50,
@@ -12,7 +12,7 @@ const allInfo = [
   {
     id: 2,
     title: "Delicious Wet Cat Food",
-    image: "/images/wet_food_image.webp",
+    image: "images/wet_food_image.webp",
     type: "food",
     typeSpecial: "wet",
     price: 150,
@@ -21,7 +21,7 @@ const allInfo = [
   {
     id: 3,
     title: "Raw Natural Cat Food",
-    image: "/images/raw_food_image.jpg",
+    image: "images/raw_food_image.jpg",
     type: "food",
     typeSpecial: "raw",
     price: 30,
@@ -30,7 +30,7 @@ const allInfo = [
   {
     id: 4,
     title: "Interactive Cat Toys Set",
-    image: "/images/cat_toys_image.jpg",
+    image: "images/cat_toys_image.jpg",
     type: "accessories",
     typeSpecial: "toys",
     price: 25,
@@ -38,7 +38,7 @@ const allInfo = [
   {
     id: 12,
     title: "Interactive Cat Toys Set",
-    image: "/images/cat_toys_image2.webp",
+    image: "images/cat_toys_image2.webp",
     type: "accessories",
     typeSpecial: "toys",
     price: 50,
@@ -47,7 +47,7 @@ const allInfo = [
   {
     id: 5,
     title: "Cozy Cat Beds Collection",
-    image: "/images/cat_beds_image.jpg",
+    image: "images/cat_beds_image.jpg",
     type: "accessories",
     typeSpecial: "beds",
     price: 23,
@@ -57,7 +57,7 @@ const allInfo = [
   {
     id: 6,
     title: "Cat Dental Care Kit",
-    image: "/images/cat_dental_care_image.jpg",
+    image: "images/cat_dental_care_image.jpg",
     type: "healthcare",
     typeSpecial: "dental",
     price: 27,
@@ -66,7 +66,7 @@ const allInfo = [
   {
     id: 7,
     title: "Essential Cat Vitamins",
-    image: "/images/cat_vitamins_image.jpg",
+    image: "images/cat_vitamins_image.jpg",
     type: "healthcare",
     typeSpecial: "vitamins",
     price: 29,
@@ -75,7 +75,7 @@ const allInfo = [
   {
     id: 8,
     title: "Easy Clean Litter Box Set",
-    image: "/images/litter_box_image.jpg",
+    image: "images/litter_box_image.jpg",
     type: "accessories",
     typeSpecial: "litter",
     price: 32,
@@ -84,7 +84,7 @@ const allInfo = [
   {
     id: 9,
     title: "Cat Feeding Bowls Set",
-    image: "/images/cat_bowls_image.webp",
+    image: "images/cat_bowls_image.webp",
     type: "scratching",
     typeSpecial: "bowls",
     price: 37,
@@ -93,7 +93,7 @@ const allInfo = [
   {
     id: 10,
     title: "Portable Cat Crates",
-    image: "/images/cat_crates_image.jpg",
+    image: "images/cat_crates_image.jpg",
     type: "scratching",
     typeSpecial: "crates",
     price: 31,
@@ -102,7 +102,7 @@ const allInfo = [
   {
     id: 11,
     title: "Cat Scratching Posts",
-    image: "/images/scratching_posts_image.jpg",
+    image: "images/scratching_posts_image.jpg",
     type: "scratching",
     typeSpecial: "scratching",
     price: 18,
@@ -111,18 +111,18 @@ const allInfo = [
 
 export default allInfo;
 
-// import image_1 from "/images/dry_food_image.jpg";
-// import image_2 from "/images/wet_food_image.webp";
-// import image_3 from "/images/raw_food_image.jpg";
-// import image_4 from "/images/cat_toys_image.jpg";
-// import image_5 from "/images/cat_toys_image2.webp";
-// import image_6 from "/images/cat_beds_image.jpg";
-// import image_7 from "/images/cat_dental_care_image.jpg";
-// import image_8 from "/images/cat_vitamins_image.jpg";
-// import image_9 from "/images/litter_box_image.jpg";
-// import image_10 from "/images/cat_bowls_image.webp";
-// import image_11 from "/images/cat_crates_image.jpg";
-// import image_12 from "/images/scratching_posts_image.jpg";
+// import image_1 from "images/dry_food_image.jpg";
+// import image_2 from "images/wet_food_image.webp";
+// import image_3 from "images/raw_food_image.jpg";
+// import image_4 from "images/cat_toys_image.jpg";
+// import image_5 from "images/cat_toys_image2.webp";
+// import image_6 from "images/cat_beds_image.jpg";
+// import image_7 from "images/cat_dental_care_image.jpg";
+// import image_8 from "images/cat_vitamins_image.jpg";
+// import image_9 from "images/litter_box_image.jpg";
+// import image_10 from "images/cat_bowls_image.webp";
+// import image_11 from "images/cat_crates_image.jpg";
+// import image_12 from "images/scratching_posts_image.jpg";
 
 // const allInfo = [
 //   // Dry Cat Food

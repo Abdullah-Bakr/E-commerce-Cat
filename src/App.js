@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./Comp/Header";
 import Home from "./Comp/Home";
 import "./scss/app.scss";
@@ -21,7 +21,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </CartProvider>
