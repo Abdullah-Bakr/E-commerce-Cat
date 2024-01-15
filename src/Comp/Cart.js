@@ -30,7 +30,7 @@ const Cart = () => {
           <>
             <div className="cart-products">
               {cartItems.map((item) => (
-                <div className="cart-product">
+                <div key={item.id} className="cart-product">
                   <div className="img-box">
                     <img
                       src={`${process.env.PUBLIC_URL}/${item.image}`}
