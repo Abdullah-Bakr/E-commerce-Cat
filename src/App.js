@@ -15,17 +15,15 @@ function App() {
   return (
     <CartProvider>
       <Header />
-      <HashRouter basename="/E-commerce-Cat">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
       <Footer />
     </CartProvider>
   );
