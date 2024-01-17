@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom";
+import React from "react";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import Header from "./Comp/Header";
 import Home from "./Comp/Home";
 import "./scss/app.scss";
@@ -14,15 +15,17 @@ function App() {
   return (
     <CartProvider>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <HashRouter basename="/E-commerce-Cat">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </HashRouter>
       <Footer />
     </CartProvider>
   );
