@@ -29,3 +29,16 @@
     }
   }
 }
+
+@media (max-width: "768px") {
+  .footer {
+    .contains {
+      p {
+        text-align: center;
+      }
+      .communication {
+        flex: 1;
+      }
+    }
+  }
+}
